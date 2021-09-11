@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/helpbg"
+    tools:context=".activity.HelpActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbarlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="@dimen/_80sdp"
+       >
+
+        <LinearLayout
+            android:id="@+id/ll_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/font_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Details"
+                android:textColor="@color/skyblue"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="normal" />
+
+            <TextView
+                style="@style/font_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/if_you_still_have_trouble_you_can_contact_us_through_the_call_or_email_for_support_account"
+                android:textColor="@color/pink"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_contact"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/font_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="Phone number"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+
+
+                <TextView
+                    style="@style/font_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:text="+918888888888"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@color/light_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/font_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="Email"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+
+
+                <TextView
+                    style="@style/font_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:text="info@RoyalMoney.in"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

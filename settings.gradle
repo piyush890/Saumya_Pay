@@ -1,0 +1,3 @@
+include ':aeps_lib-release(29-09)'
+include ':app'
+rootProject.name = "Royal Money"

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/llmobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circlewhiteripple"
+        android:clickable="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relmobile"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/cirlcegrey">
+
+            <ImageView
+                android:id="@+id/imgmobile"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/mobileimage"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/mobile" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtmobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center_horizontal"
+            android:text="@string/mobile"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+</RelativeLayout>

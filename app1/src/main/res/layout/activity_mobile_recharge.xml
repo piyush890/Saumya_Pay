@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    tools:context=".activity.MobileRechargeActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/llmain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:id="@+id/relmoboperator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_33sdp"
+            android:background="@drawable/rounded_grey_rectangle">
+
+            <View
+                android:id="@+id/viewmoboperator"
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:background="@color/roundedrectbordercolor" />
+
+            <TextView
+                android:id="@+id/txt_optype"
+                style="@style/font_regular"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_toRightOf="@id/viewmoboperator"
+                android:background="@drawable/skipripple"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_10sdp"
+                android:text="@string/select_operater"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal" />
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/rel_spinner"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/_33sdp"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:layout_toRightOf="@id/viewmoboperator"-->
+<!--                android:paddingLeft="@dimen/_10sdp"-->
+<!--                android:background="@drawable/rounded_grey_rectangle"-->
+<!--                android:visibility="visible">-->
+
+<!--                <Spinner-->
+<!--                    android:id="@+id/spinnerstatus"-->
+<!--                    style="@style/font_regular_light"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/_33sdp"-->
+<!--                    android:spinnerMode="dropdown" />-->
+
+<!--            </RelativeLayout>-->
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relmobnumber"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_33sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/rounded_grey_rectangle">
+
+
+            <ImageView
+                android:id="@+id/txt_rupee"
+                style="@style/font_bold"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/mobile" />
+
+            <View
+                android:id="@+id/viewmobnumber"
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_toRightOf="@id/txt_rupee"
+                android:background="@color/roundedrectbordercolor" />
+
+            <EditText
+                android:id="@+id/edt_mobilenumber"
+                style="@style/font_regular"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_toRightOf="@id/viewmobnumber"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/mobile_number"
+                android:maxLength="10"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:paddingLeft="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relrechargeamt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_33sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/rounded_grey_rectangle">
+
+
+            <TextView
+                android:id="@+id/txt_rechargeamt"
+                style="@style/font_bold"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="\u20B9"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/viewrechargeamt"
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_toRightOf="@id/txt_rechargeamt"
+                android:background="@color/roundedrectbordercolor" />
+
+            <EditText
+                android:id="@+id/edtrecharamt"
+                style="@style/font_regular"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_toRightOf="@id/viewrechargeamt"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:hint="@string/amount"
+                android:maxLength="4"
+                android:paddingLeft="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relenter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_33sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/btnblueripple"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/txtenter"
+                style="@style/font_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="PROCEED TO RECHARGE"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

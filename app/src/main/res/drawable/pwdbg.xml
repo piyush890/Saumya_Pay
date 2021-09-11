@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:height="@dimen/_39sdp"
+        android:drawable="@drawable/roundedrectangleshape"
+        android:gravity="left|center_vertical" />
+    <item
+        android:width="@dimen/_45sdp"
+        android:height="@dimen/_45sdp"
+        android:drawable="@drawable/pwdcircle"
+        android:gravity="left|center_vertical" />
+
+</layer-list>

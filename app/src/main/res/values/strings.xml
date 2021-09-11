@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">UTI PAN BANKING</string>
+    <string name="bill_payment">Bill Payment</string>
+    <string name="all_recharge">All Recharge</string>
+    <string name="mobile_recharge">Mobile Recharge</string>
+    <string name="money_transfer">Money Settlement</string>
+    <string name="skip">Skip</string>
+    <string name="user_name">User Name</string>
+    <string name="enter">ENTER</string>
+    <string name="password">Password</string>
+    <string name="press_once_again_exit">Press Once Again to Exit</string>
+    <string name="this_is_menu_icon">this is menu icon</string>
+    <string name="home">Home</string>
+    <string name="this_is_search_icon">this is search icon</string>
+    <string name="this_is_the_person_image">this is the person image</string>
+    <string name="neha_sharma">Neha Sharma</string>
+    <string name="these_are_small_icons">These are small icons</string>
+    <string name="navigation_drawer_open">drawer open</string>
+    <string name="navigation_drawer_close">drawer close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="this_is_banner">This is banner</string>
+    <string name="this_is_star_label">This is star label</string>
+    <string name="recharge_amp_bill_payment"><![CDATA[RECHARGE & BILL PAYMENT]]></string>
+    <string name="mobileimage">mobileimage</string>
+    <string name="dth">DTH</string>
+    <string name="mobile">Mobile</string>
+    <string name="broadband">Broadband</string>
+    <string name="main_balance">Main Balance</string>
+    <string name="u20b9_0_00">₹ 0.00</string>
+    <string name="apes_balance">APES Balance</string>
+    <string name="profile">Profile</string>
+    <string name="neha123_gmail_com">Neha123@gmail.com</string>
+    <string name="recharge_amp_bill_pay"><![CDATA[Recharge & bill Pay]]></string>
+    <string name="log_in">LOG IN</string>
+    <string name="this_is_back_arrow">this is back arrow</string>
+    <string name="select_operater">Select Operater</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="amount">Amount</string>
+    <string name="account_number">Account number</string>
+    <string name="consumer_number">Consumer Number</string>
+    <string name="about_us">About us</string>
+
+    <string name="about_info"></string>
+    <string name="pay_250_all_inc_is_a_fully_owned_recharge">&#160;&#160;&#160;&#160;&#160;Pay 250 All Inc. is a fully owned recharge product launched under the
+    brand name .<br></br>  &#160;&#160;&#160;&#160;&#160;Pay 250 is for all people made easy.Any time any where recharge, Bill Payment, Not need to go the shop and on Q for recharge and billpayment,
+        you are anywhere on the world you can pay your telephone bill, Electricity Bill, Tall Tax,Gas Bill,Water Bill,Mobile Recharge,
+        DTH Recharge, Post Paid Bill etc.
+
+    </string>
+
+    <string name="skills">&#160;&#160;&#160;&#160;&#160;We are working from 2010, establishment of the company in Pune and working in different kind of services.
+        \n\n
+         &#160;&#160;&#160;&#160;&#160;1)Mobile Recharge\n
+        &#160;&#160;&#160;&#160;&#160;2)DTH Recharge\n
+        &#160;&#160;&#160;&#160;&#160;3)Bill Payment
+
+    </string>
+    <string name="our_skills">Our skills</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="email">Email</string>
+    <string name="update">UPDATE</string>
+    <string name="city">City</string>
+
+    <string name="settings">Settings</string>
+    <string name="apes_pay">AEPS Pay</string>
+    <string name="recharge_to_all">Recharge To All</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="hdfc_bank">HDFC Bank</string>
+    <string name="add_money_to">Add Money To</string>
+    <string name="recharge_all_wallet">Recharge All Wallet</string>
+    <string name="after_transfer_amount_fill_below_field_no_changes_in_this_method">* After Transfer Amount,Fill Below field (No changes in this method)</string>
+    <string name="remark">Remark</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="if_you_still_have_trouble_you_can_contact_us_through_the_call_or_email_for_support_account">If you still have trouble,you can contact us through the call or email for support account</string>
+    <string name="history">My History</string>
+    <string name="txn_no">Txn.No.</string>
+    <string name="account_no">50200040805888</string>
+    <string name="reports">Reports</string>
+    <string name="wallet">Wallet</string>
+    <string name="title_activity_satelment">SatelmentActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

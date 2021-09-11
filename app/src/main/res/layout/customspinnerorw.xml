@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llmain"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_35sdp"
+    android:background="@drawable/skipripple"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lbloperatortype"
+        style="@style/font_regular"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_33sdp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_14sdp"
+        android:text="Select Payment Method"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/_12sdp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:visibility="gone"
+        android:background="@color/linecolor" />
+
+</LinearLayout>

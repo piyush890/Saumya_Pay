@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#5E5E5E</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#5E5E5E</color>
+    <color name="slideselect">#5D7E9A</color>
+    <color name="notselectslide">#C3C3C3</color>
+    <color name="lightgrey">#EAEAEA</color>
+    <color name="textcolor">#6B6B6B</color>
+    <color name="skyblue">#028FD7</color>
+    <color name="linecolor">#D9D9D9</color>
+    <color name="circlecolor">#F6F6F6</color>
+    <color name="roundedrectbordercolor">#CCCCCC</color>
+    <color name="greyborder">#CBCBCB</color>
+    <color name="pink">#FFB3B5</color>
+    <color name="helpbg">#FAFAFA</color>
+    <color name="grenn">#32C57F</color>
+</resources>

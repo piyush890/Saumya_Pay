@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relsub"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@color/grey">
+
+        <ImageView
+            android:id="@+id/imgmenu"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/circlewhiteripple"
+            android:clickable="true"
+            android:contentDescription="@string/this_is_menu_icon"
+            android:padding="@dimen/_15sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/menuicon" />
+
+        <ImageView
+            android:id="@+id/imgback"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/circlewhiteripple"
+            android:clickable="true"
+            android:contentDescription="@string/this_is_back_arrow"
+            android:padding="@dimen/_15sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_leftarrow"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/txt_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/imgmenu"
+            android:layout_toRightOf="@id/imgback"
+            android:text="@string/home"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/imgsearch"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/this_is_search_icon"
+            android:padding="@dimen/_15sdp"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            android:background="@drawable/circlewhiteripple"
+            android:src="@drawable/ic_wallet" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

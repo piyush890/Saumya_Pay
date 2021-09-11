@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AboutActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbarlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/llmain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_heading"
+            style="@style/font_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="About Pay 250"
+            android:textColor="@color/skyblue"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt_containt"
+            style="@style/font_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="@string/pay_250_all_inc_is_a_fully_owned_recharge"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txtskilltwo"
+            style="@style/font_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="@string/our_skills"
+            android:textColor="@color/skyblue"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt_sub"
+            style="@style/font_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="@string/skills"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="normal" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

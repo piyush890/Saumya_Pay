@@ -1,0 +1,56 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Pay250" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/grey</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimaryDark">@color/white</item>
+
+    </style>
+
+    <style name="font_regular" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="font_bold" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@font/robot_bold</item>
+    </style>
+
+    <style name="font_regular_light" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@font/roboto_light</item>
+    </style>
+
+    <style name="font_bold_dark" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@font/roboto_thin</item>
+    </style>
+
+    <style name="font_medium" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/grey</item>
+    </style>
+
+    <style name="Theme.Pay250.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Pay250.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Pay250.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/helpbg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@color/white"
+        android:elevation="@dimen/_7sdp"
+        android:padding="@dimen/_10sdp">
+
+        <LinearLayout
+            android:id="@+id/llmain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbltxt"
+                    style="@style/font_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/txn_no"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/txt_txno"
+                    style="@style/font_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_toRightOf="@id/lbltxt"
+                    android:text="0000917267"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+
+
+                <TextView
+                    android:id="@+id/txt_status"
+                    style="@style/font_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Success"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/lbldate"
+                style="@style/font_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="2020-08-18T00:00:00"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_12sdp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <RelativeLayout
+                    android:id="@+id/relamt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/lblwallet"
+                        style="@style/font_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amount"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/amt"
+                        style="@style/font_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Rs.10.0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relprofit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relamt"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/lblProfit"
+                        style="@style/font_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Profit"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/profiltamt"
+                        style="@style/font_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Rs.10.0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/reltotbalance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relprofit"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/lbltotalbalnce"
+                        style="@style/font_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Balance"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/totalbalamt"
+                        style="@style/font_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Rs.10.0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/lblnumber"
+                style="@style/font_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="9404443585"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/llmain"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@color/light_grey" />
+    </RelativeLayout>
+</RelativeLayout>

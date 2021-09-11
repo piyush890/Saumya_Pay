@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.Client.pay">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        tools:node="remove" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name="com.Client.pay.application.ApplicationDetails"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Pay250"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.Client.pay.activity.LandLineActivity"></activity>
+        <activity android:name="com.Client.pay.activity.EmiActivity" />
+        <activity android:name="com.Client.pay.activity.InsuranceActivity" />
+        <activity android:name="com.Client.pay.activity.FastTagActivity" />
+        <activity android:name="com.Client.pay.activity.WaterActivity" />
+        <activity android:name="com.Client.pay.activity.GasActivity" />
+        <activity android:name="com.Client.pay.activity.PostPaidActivity" />
+        <activity android:name="com.Client.pay.activity.datcard" />
+        <activity
+            android:name="com.Client.pay.activity.SatelmentActivity"
+            android:label="@string/title_activity_satelment"
+            android:theme="@style/Theme.Pay250.NoActionBar" />
+        <activity android:name="com.Client.pay.activity.BankDetailsActivity" />
+        <activity android:name="com.Client.pay.activity.ReportActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.Client.pay.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="androidx.core.content.FileProvider"
+                android:resource="@xml/provider_path" />
+        </provider>
+
+        <activity
+            android:name="com.Client.pay.activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Client.pay.activity.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Client.pay.activity.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Client.pay.activity.PrivacyPolicyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Client.pay.activity.MyHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Client.pay.activity.MyWalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Client.pay.activity.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Client.pay.activity.ElectricityBillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Client.pay.activity.SettleMentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Client.pay.activity.BroadBandActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Client.pay.activity.DTHRechargeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Client.pay.activity.MobileRechargeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Client.pay.activity.DashBoardActivity"
+            android:screenOrientation="portrait" /> <!-- <activity -->
+        <!-- android:name=".activity.LoginActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name="com.Client.pay.activity.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

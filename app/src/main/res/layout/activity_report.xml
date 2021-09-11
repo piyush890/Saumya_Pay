@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/helpbg"
+    tools:context=".activity.ReportActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/rel_selectdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <RelativeLayout
+                android:id="@+id/relfromdate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_weight="50"
+                android:clickable="true">
+
+                <EditText
+                    android:id="@+id/etfromdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="Select From Date"
+                    android:longClickable="false"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/_12sdp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relTodate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="50"
+                android:clickable="true">
+
+                <EditText
+                    android:id="@+id/etToDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="Select To Date"
+                    android:longClickable="false"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/_12sdp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:layout_centerVertical="true"
+        >
+
+        <TextView
+            android:id="@+id/lblProfit"
+            style="@style/font_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please select From date and To date to generate report"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyle_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel_selectdate"
+        android:overScrollMode="never"
+        tools:listitem="@layout/row_reporrt_recyccle"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/navheader">
+
+    <LinearLayout
+        android:id="@+id/llsub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_userprofile"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/ic_avatar"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/this_is_the_person_image"
+            />
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:text="@string/neha_sharma"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:text="@string/neha123_gmail_com"
+            android:textStyle="normal"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
